@@ -35,7 +35,7 @@ function App() {
 	  return () => clearInterval(interval);
 	}
   },[timer]);
-  const strokeDashoffset = (timer/totalTime);
+  const strokeDashoffset = (timer/totalTime)*440;
   return (
     <div className="App">
       <header className="App-header">
