@@ -18,7 +18,7 @@ function App() {
 	};
   let message;
   if (count >200){
-	message = <h3>Wow, you're greedy! For that, you lose everything.</h3>;
+	message = setCount(0);<h3>Wow, you're greedy! For that, you lose everything.</h3>;
   }else {
 	message = <h3>Maybe you could give a little to the homeless.</h3>;
   }
