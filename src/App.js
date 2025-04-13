@@ -3,7 +3,7 @@ import './App.css';
 import React, {useEffect,useState} from 'react';
 
 function App() {
-  const [count,setCount] = useState(150);
+  const [count,setCount] = useState(50);
   const [colour, setColour]= useState('orange');
   const [previous, setPrevious] = useState('');
   const [timer, setTimer] = useState(30);
@@ -23,7 +23,7 @@ function App() {
 	}
 	},[count]);
   useEffect(()=>{
-	if(timer==0){
+	if(timer===0){
 	  alert("Uh-Oh Time is up. Time to Restart my Game");
 	  setCount(150);
 	  setTimer(30);
