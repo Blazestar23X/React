@@ -39,7 +39,6 @@ function App() {
 	<h1 style={{color: colour}}>${count}</h1>
 	<h2 style={{color: colour}}>{previous}</h2>
 	if ({count}>200){
-		setCount(0);
 		return <h3> Wow your greedy. For that you lose everything. </h3>;
 	}else{
 		return <h3> Maybe you could give a little to the homeless </h3>;
