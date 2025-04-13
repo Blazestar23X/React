@@ -77,7 +77,7 @@ function App() {
 	  strokeDasharray="440"
 	  strokeDashoffset={strokeDashoffset}
 	  strokeLinecap="round"
-	  styl{{ transition: "stroke-dashoffset 1s linear" }}
+	  style{{ transition: "stroke-dashoffset 1s linear" }}
 	  />
 	  </svg>
 	  Timer: {timer}s
