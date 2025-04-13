@@ -7,7 +7,7 @@ function App() {
   const [colour, setColour]= useState('orange');
   const [previous, setPrevious] = useState('');
   const handleClickA = ()=>{
-	setColour('green');
+	setColour('blue');
 	setCount(count+1);
 	setPrevious("You just earned $1");
 	};
