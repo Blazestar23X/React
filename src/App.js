@@ -6,6 +6,7 @@ function App() {
   const [count,setCount] = useState(150);
   const [colour, setColour]= useState('orange');
   const [previous, setPrevious] = useState('');
+  cont [timer, setTimer] = useState(0);
   const handleClickA = ()=>{
 	setColour('green');
 	setCount(count+1);
@@ -20,6 +21,12 @@ function App() {
 	if (count >200){
 	  setCount(0);
 	}
+  useEffect(()=>{
+	cont interval = setInterval(()=>{
+	  setTimer(prev => prev + 1);
+	},1000);
+	return () => clearInterval(interval);
+  },[]);
   },[count]);
   return (
     <div className="App">
@@ -48,6 +55,9 @@ function App() {
 	    ? "Wow, you're greedy! For that, you lose everything."
 	    : "Maybe you could give a little to the homeless."}
 	</h3>
+	<div>
+	  Timer: {timer}s
+	</div>
       </header>
       <p>Third Message this will work</p>
     </div>
