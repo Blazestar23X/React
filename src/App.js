@@ -6,7 +6,7 @@ function App() {
   const [count,setCount] = useState(150);
   const [colour, setColour]= useState('orange');
   const [previous, setPrevious] = useState('');
-  cont [timer, setTimer] = useState(0);
+  const [timer, setTimer] = useState(0);
   const handleClickA = ()=>{
 	setColour('green');
 	setCount(count+1);
