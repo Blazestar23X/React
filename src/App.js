@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, {useEffect,useState} from 'react';
+import LineChart from './LineChart';
 
 function App() {
   const [count,setCount] = useState(50);
@@ -86,6 +87,10 @@ function App() {
 	  <label>To-Do List <input name="Item" /></label>
 	  <label> Complete <input type="checkbox" name="myCheckbox"/></label>
 	</div>
+	<div>
+	  <h2> GPT Line Graph</h2>
+	  <LineChart />
+   	</div>
       </header>
       <p>Third Message this will work</p>
     </div>
