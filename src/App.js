@@ -66,7 +66,7 @@ function App() {
 	<div>
 	  <svg width="150" height="150" viewBox = "0 0 150 150">
 	  {/* Background Circle */}
-	  <circle cx="75" cy="75" r="70" stroke="#e6e6e6" strokeWidth="10" fill=="none"/>
+	  <circle cx="75" cy="75" r="70" stroke="#e6e6e6" strokeWidth="10" fill="none"/>
 	  {/* Foreground Circle (progress) */}
 	  <circle cx="75"
           cy="75"
