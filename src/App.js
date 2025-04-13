@@ -3,7 +3,7 @@ import './App.css';
 import React, {useState} from 'react';
 
 function App() {
-  const [count,setCount] = useState(100);
+  const [count,setCount] = useState(150);
   const [colour, setColour]= useState('orange');
   const [previous, setPrevious] = useState('');
   const handleClickA = ()=>{
