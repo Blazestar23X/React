@@ -23,10 +23,16 @@ function App() {
 	}
 	},[count]);
   useEffect(()=>{
-	const interval = setInterval(()=>{
-	  setTimer(prev => prev - 1);
-	},1000);
-	return () => clearInterval(interval);
+	if(Timer==0){
+	  alert("Uh-Oh Time is up. Time to Restart my Game");
+	  setCount(150);
+	  setTimer(30);
+	}else{
+	  const interval = setInterval(()=>{
+	    setTimer(prev => prev - 1);
+	  },1000);
+	  return () => clearInterval(interval);
+	}
   },[]);
   return (
     <div className="App">
