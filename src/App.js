@@ -3,15 +3,18 @@ import './App.css';
 import React, {useState} from 'react';
 
 function App() {
-  const [count,setCount] = useState(0);
+  const [count,setCount] = useState(100);
   const [colour, setColour]= useState('orange');
+  const [previous, setPrevious] = useState('');
   const handleClickA = ()=>{
 	setColour('green');
 	setCount(count+1);
+	setPrevious("You just earned $1");
 	};
  const handleDonate = ()=>{
 	setColour('red');
 	setCount(count-2);
+	setPrevious("You donated $2. What a Charitable Lad");
 	};
   return (
     <div className="App">
@@ -34,6 +37,7 @@ function App() {
 	<button onClick={()=> handleDonate()}>Donate</button>
 	</div>
 	<h1 style={{color: colour}}>${count}</h1>
+	<h2 style={{color: colour}}>{previous}</h2>
       </header>
       <p>Third Message this will work</p>
     </div>
