@@ -89,7 +89,7 @@ function App() {
 	</div>
 	<div>
 	  <h2> GPT Line Graph</h2>
-	  <LineChart dataset=[8,9,10,11,12/>
+	  <LineChart data=[8,9,10,11,12]/>
    	</div>
       </header>
       <p>Third Message this will work</p>
