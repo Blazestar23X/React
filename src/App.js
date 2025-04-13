@@ -23,7 +23,7 @@ function App() {
 	}
 	},[count]);
   useEffect(()=>{
-	if(Timer==0){
+	if(timer==0){
 	  alert("Uh-Oh Time is up. Time to Restart my Game");
 	  setCount(150);
 	  setTimer(30);
