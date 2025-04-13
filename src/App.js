@@ -17,17 +17,17 @@ function App() {
 	setCount(count-2);
 	setPrevious("You donated $2. What a Charitable Lad");
 	};
-  useEffect(() => {
+ useEffect(() => {
 	if (count >200){
 	  setCount(0);
 	}
+	},[count]);
   useEffect(()=>{
 	const interval = setInterval(()=>{
 	  setTimer(prev => prev + 1);
 	},1000);
 	return () => clearInterval(interval);
   },[]);
-  },[count]);
   return (
     <div className="App">
       <header className="App-header">
