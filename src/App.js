@@ -6,7 +6,7 @@ function App() {
   const [count,setCount] = useState(150);
   const [colour, setColour]= useState('orange');
   const [previous, setPrevious] = useState('');
-  const [timer, setTimer] = useState(0);
+  const [timer, setTimer] = useState(30);
   const handleClickA = ()=>{
 	setColour('green');
 	setCount(count+1);
@@ -24,7 +24,7 @@ function App() {
 	},[count]);
   useEffect(()=>{
 	const interval = setInterval(()=>{
-	  setTimer(prev => prev + 1);
+	  setTimer(prev => prev - 1);
 	},1000);
 	return () => clearInterval(interval);
   },[]);
