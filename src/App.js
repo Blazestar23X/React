@@ -1,7 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import React, {useState} from 'react';
 
 function App() {
+  const [count,setCount] = useState(0);
+  const [colour, setColour]= useState('orange');
+  const handleClickA = ()=>{
+	setColour('green');
+	setCount(count+1);
+	};
+ const handleDonate = ()=>{
+	setColour('red');
+	setCount(count-2);
+	};
   return (
     <div className="App">
       <header className="App-header">
@@ -17,7 +28,14 @@ function App() {
         >
           Learn React
         </a>
+	<p>What did i tell you, Now i just need to make some money.</p>
+	<div style={{display: 'flex', flexDirection:'row',gap:'50px'}}>
+	<button onClick={()=> handleClickA()}>Free Money</button> 
+	<button onClick={()=> handleDonate()}>Donate</button>
+	</div>
+	<h1 style={{color: colour}}>${count}</h1>
       </header>
+      <p>Third Message this will work</p>
     </div>
   );
 }
