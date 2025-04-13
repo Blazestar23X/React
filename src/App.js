@@ -7,6 +7,7 @@ function App() {
   const [colour, setColour]= useState('orange');
   const [previous, setPrevious] = useState('');
   const [timer, setTimer] = useState(30);
+  const totalTime = 30;
   const handleClickA = ()=>{
 	setColour('green');
 	setCount(count+1);
@@ -34,6 +35,7 @@ function App() {
 	  return () => clearInterval(interval);
 	}
   },[timer]);
+  const strokeDashoffset = (timer/totalTime);
   return (
     <div className="App">
       <header className="App-header">
@@ -62,6 +64,22 @@ function App() {
 	    : "Maybe you could give a little to the homeless."}
 	</h3>
 	<div>
+	  <svg width="150 heigh="150" viewBox = "0 0 150 150">
+	  {/* Background Circle */}
+	  <circle cx="75" cy="75" r="70" stroke="#e6e6e6" strokeWidth="10 fill=="none"/>
+	  {/* Foreground Circle (progress) */}
+	  <circle cx="75"
+          cy="75"
+          r="70"
+          stroke="#00ff00"
+	  strokeWidth="10"
+	  fill="none"
+	  strokeDasharray="440"
+	  strokeDashoffset={strokeDashoffset}
+	  strokeLinecap="round"
+	  styl{{ transition: "stroke-dashoffset 1s linear" }}
+	  />
+	  </svg>
 	  Timer: {timer}s
 	</div>
       </header>
