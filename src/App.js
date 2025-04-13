@@ -33,7 +33,7 @@ function App() {
 	  },1000);
 	  return () => clearInterval(interval);
 	}
-  },[]);
+  },[timer]);
   return (
     <div className="App">
       <header className="App-header">
