@@ -6,11 +6,11 @@ ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Tooltip,
 
 const LineChart = () =>{
   const data = {
-    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+    labels: ['Jan', 'Febno', 'Mar', 'Apr', 'May'],
     datasets: [
 	{
 	  label: 'My Data',
-	  data: [12,19,3,5,2],
+	  data: [8,19,33,5,2],
 	  fill: false,
 	  borderColor: 'rgb(75,192,192)',
 	  tension: 0.4,
