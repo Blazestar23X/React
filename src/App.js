@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, {useEffect,useState} from 'react';
 import LineChart from './LineChart';
+import MyChartComponent from "./MyChartComponent";
 
 function App() {
   const [count,setCount] = useState(50);
@@ -89,7 +90,8 @@ function App() {
 	</div>
 	<div>
 	  <h2> GPT Line Graph</h2>
-	  <LineChart data=[8,9,10,11,12]/>
+	  <LineChart />
+	  <MyChartComponent />
    	</div>
       </header>
       <p>Third Message this will work</p>
