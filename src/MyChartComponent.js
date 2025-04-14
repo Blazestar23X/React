@@ -13,7 +13,7 @@ const options = {
   chart: {
     title: "Company Performance",
     subtitle: "Sales and Expeses: 2019-2022",
-  };
+  },
 };
 
 function MyChartComponent () {
