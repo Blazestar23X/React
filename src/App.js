@@ -5,7 +5,7 @@ import LineChart from './LineChart';
 import MyChartComponent from "./MyChartComponent";
 
 function App() {
-  const [count,setCount] = useState(50);
+ export const [count,setCount] = useState(50);
   const [colour, setColour]= useState('orange');
   const [previous, setPrevious] = useState('');
   const [timer, setTimer] = useState(30);
