@@ -21,7 +21,7 @@ function App() {
 	setCount(count-2);
 	setPrevious("You donated $2. What a Charitable Lad");
 	};
- const [showChart,setShowChart]=useState(false);
+ const [showChart,setShowChart]=useState(true);
  const [chartCount, setChartCount] = useState(0);
  useEffect(() => {
 	if (count >200){
