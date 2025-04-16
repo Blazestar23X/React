@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, {useEffect,useState} from 'react';
 import LineChart from './LineChart';
-import MyChartComponent from "./MyChartComponent.js";
+import MyChartComponent from "./MyChartComponent";
 
 function App() {
   const [count,setCount] = useState(50);
@@ -89,8 +89,9 @@ function App() {
 	  <label> Complete <input type="checkbox" name="myCheckbox"/></label>
 	</div>
 	<div>
-	  <h2> GPT Second Line Graph</h2>
+	  <h2> GPT Line Graph</h2>
 	  <LineChart />
+	  <h4> Why</h4>
 	  <MyChartComponent />
    	</div>
       </header>
