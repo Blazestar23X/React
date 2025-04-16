@@ -9,17 +9,19 @@ const previousCount2 = 0;
 const previousCount3 = 0;
 const previousCount4 = 0;
 */
+const [prevCount, setPrev] = usestate(0);
 const LineChart = ({ count }) =>{
+  setPrev(count);
   /*previousCount = previousCount2;
   previousCount2 = previousCount3;
   previousCount3 = previousCount4;
-  previousCount4 = count;*/
+  previousCount4 = setPrev;*/
   const data = {
     labels: ['Jan', 'Febno', 'Mar', 'Apr', 'May'],
     datasets: [
 	{
 	  label: 'My Data',
-	  data: [3,4,5,6,count],
+	  data: [3,4,5,prevCount,count],
 	  fill: false,
 	  borderColor: 'rgb(75,192,192)',
 	  tension: 0.4,
