@@ -4,8 +4,9 @@ import React, {useEffect,useState} from 'react';
 import LineChart from './LineChart';
 import MyChartComponent from "./MyChartComponent";
 
+
 function App() {
- export const [count,setCount] = useState(50);
+  const [count,setCount] = useState(50);
   const [colour, setColour]= useState('orange');
   const [previous, setPrevious] = useState('');
   const [timer, setTimer] = useState(30);
