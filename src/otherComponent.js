@@ -1,6 +1,4 @@
 function OtherComponent({ count }) {
-  return (
-  	return null;	  
-  );
+  return null;	  
 }
 export default OtherComponent;
