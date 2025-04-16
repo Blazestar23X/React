@@ -3,7 +3,6 @@ import './App.css';
 import React, {useEffect,useState} from 'react';
 import LineChart from './LineChart';
 import MyChartComponent from "./MyChartComponent";
-import OtherComponent from './otherComponent';
 
 
 function App() {
@@ -59,7 +58,7 @@ function App() {
 	<div style={{display: 'flex', flexDirection:'row',gap:'50px'}}>
 	<button onClick={()=> handleClickA()}>Free Money</button> 
 	<button onClick={()=> handleDonate()}>Donate</button>
-	<OtherComponent count={count} />
+	<LineChart count={count} />
 	</div>
 	<h1 style={{color: colour}}>${count}</h1>
 	<h2 style={{color: colour}}>{previous}</h2>

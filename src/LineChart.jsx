@@ -1,17 +1,16 @@
 import React from 'react';
 import {Line} from 'react-chartjs-2';
 import {Chart as ChartJS, LineElement, CategoryScale,LinearScale,PointElement,Tooltip,Legend} from 'chart.js';
-import OtherComponent from './otherComponent';
 
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Tooltip,Legend);
 
-const LineChart = () =>{
+const LineChart = ({ count }) =>{
   const data = {
     labels: ['Jan', 'Febno', 'Mar', 'Apr', 'May'],
     datasets: [
 	{
 	  label: 'My Data',
-	  data: [<OtherComponent count={count} />,19,33,<OtherComponent count={count} />,2],
+	  data: [count,19,33,count,2],
 	  fill: false,
 	  borderColor: 'rgb(75,192,192)',
 	  tension: 0.4,
