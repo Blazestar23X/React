@@ -11,7 +11,7 @@ const previousCount4 = 0;
 */
 const LineChart = ({ count }) =>{
   const [prevCount, setPrev] = useState(0);
-  const [prevCount1,setPrev1] = useStaet(0);
+  const [prevCount1,setPrev1] = useState(0);
   const [prevCount2,setPrev2] = useState(0);
   const [prevCount3,setPrev3] = useState(0);
   const [prevCount4,setPrev4] = useState(0);
