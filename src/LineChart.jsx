@@ -8,7 +8,6 @@ const previousCount = 0;
 const previousCount2 = 0;
 const previousCount3 = 0;
 const previousCount4 = 0;
-const previous
 
 const LineChart = ({ count }) =>{
   previousCount = previousCount2;
