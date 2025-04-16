@@ -9,8 +9,8 @@ const previousCount2 = 0;
 const previousCount3 = 0;
 const previousCount4 = 0;
 */
-const [prevCount, setPrev] = useState(0);
 const LineChart = ({ count }) =>{
+  const [prevCount, setPrev] = useState(0);
   setPrev(count);
   /*previousCount = previousCount2;
   previousCount2 = previousCount3;
