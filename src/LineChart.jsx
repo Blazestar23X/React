@@ -10,10 +10,10 @@ const previousCount3 = 0;
 const previousCount4 = 0;
 
 const LineChart = ({ count }) =>{
-  previousCount = previousCount2;
+  /*previousCount = previousCount2;
   previousCount2 = previousCount3;
   previousCount3 = previousCount4;
-  previousCount4 = count;
+  previousCount4 = count;*/
   const data = {
     labels: ['Jan', 'Febno', 'Mar', 'Apr', 'May'],
     datasets: [
