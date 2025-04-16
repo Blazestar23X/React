@@ -4,11 +4,11 @@ import {Chart as ChartJS, LineElement, CategoryScale,LinearScale,PointElement,To
 
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Tooltip,Legend);
 
-const previousCount = 0;
+/*const previousCount = 0;
 const previousCount2 = 0;
 const previousCount3 = 0;
 const previousCount4 = 0;
-
+*/
 const LineChart = ({ count }) =>{
   /*previousCount = previousCount2;
   previousCount2 = previousCount3;
@@ -19,7 +19,7 @@ const LineChart = ({ count }) =>{
     datasets: [
 	{
 	  label: 'My Data',
-	  data: [{previousCount},{previousCount2},{previousCount3},previousCount4,count],
+	  data: [3,4,5,6,count],
 	  fill: false,
 	  borderColor: 'rgb(75,192,192)',
 	  tension: 0.4,
