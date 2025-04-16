@@ -11,8 +11,16 @@ const previousCount4 = 0;
 */
 const LineChart = ({ count }) =>{
   const [prevCount, setPrev] = useState(0);
+  const [prevCount1,setPrev1] = useStaet(0);
+  const [prevCount2,setPrev2] = useState(0);
+  const [prevCount3,setPrev3] = useState(0);
+  const [prevCount4,setPrev4] = useState(0);
   useEffect(()=>{
-    setPrev(count);
+    setPrev(prevCount1);
+    setPrev1(prevCount2);
+    setPrev2(prevCount3);
+    setPrev3(prevCount4);
+    setPrev4(count);
   }, [count]);
   /*previousCount = previousCount2;
   previousCount2 = previousCount3;
@@ -23,7 +31,7 @@ const LineChart = ({ count }) =>{
     datasets: [
 	{
 	  label: 'My Data',
-	  data: [3,4,5,prevCount,count],
+	  data: [prevCount,prevCount1,prevCount2,prevCount3,prevCount4],
 	  fill: false,
 	  borderColor: 'rgb(75,192,192)',
 	  tension: 0.4,
