@@ -21,6 +21,7 @@ function App() {
 	setCount(count-2);
 	setPrevious("You donated $2. What a Charitable Lad");
 	};
+ const [showChart,setShowChart]=useState(false);
  useEffect(() => {
 	if (count >200){
 	  setCount(0);
@@ -29,9 +30,10 @@ function App() {
   useEffect(()=>{
 	if(timer===0){
 	  alert("Uh-Oh Time is up. Time to Restart my Game");
-	  <LineChart count={count} />
-	  setCount(150);
+	  setShowChart(true);
+          setCount(150);
 	  setTimer(30);
+	  
 	}else{
 	  const interval = setInterval(()=>{
 	    setTimer(prev => prev - 1);
@@ -68,7 +70,7 @@ function App() {
 	    : "Maybe you could give a little to the homeless."}
 	</h3>
 	<div> 
-	  {timer == 0 && <LineChart count={count} />}
+	  {showChart && <LineChart count={count} />}
 	</div>
 	<div>
 	  <svg width="150" height="150" viewBox = "0 0 150 150">
