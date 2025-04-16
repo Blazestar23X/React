@@ -68,7 +68,7 @@ function App() {
 	    : "Maybe you could give a little to the homeless."}
 	</h3>
 	<div> 
-	  {timer ===0 && <LineChart count={count} />}
+	  {timer == 0 && <LineChart count={count} />}
 	</div>
 	<div>
 	  <svg width="150" height="150" viewBox = "0 0 150 150">
