@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, {useEffect,useState} from 'react';
 import LineChart from './LineChart';
-import MyChartComponent from "./MyChartComponent";
+
 
 
 function App() {
@@ -97,11 +97,6 @@ function App() {
 	  <label>To-Do List <input name="Item" /></label>
 	  <label> Complete <input type="checkbox" name="myCheckbox"/></label>
 	</div>
-	<div>
-	  <h2> GPT Line Graph</h2>
-	  <h4> Why</h4>
-	  <MyChartComponent />
-   	</div>
       </header>
       <p>Third Message this will work</p>
     </div>
