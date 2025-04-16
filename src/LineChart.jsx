@@ -27,10 +27,10 @@ const LineChart = ({ count }) =>{
   previousCount3 = previousCount4;
   previousCount4 = setPrev;*/
   const data = {
-    labels: ['Jan', 'Febno', 'Mar', 'Apr', 'May'],
+    labels: ['120', '90', '60', '30', '0'],
     datasets: [
 	{
-	  label: 'My Data',
+	  label: 'Balance',
 	  data: [prevCount,prevCount1,prevCount2,prevCount3,prevCount4],
 	  fill: false,
 	  borderColor: 'rgb(75,192,192)',
