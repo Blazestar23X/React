@@ -29,6 +29,7 @@ function App() {
   useEffect(()=>{
 	if(timer===0){
 	  alert("Uh-Oh Time is up. Time to Restart my Game");
+	  <LineChart count={count} />
 	  setCount(150);
 	  setTimer(30);
 	}else{
@@ -58,7 +59,6 @@ function App() {
 	<div style={{display: 'flex', flexDirection:'row',gap:'50px'}}>
 	<button onClick={()=> handleClickA()}>Free Money</button> 
 	<button onClick={()=> handleDonate()}>Donate</button>
-	<LineChart count={count} />
 	</div>
 	<h1 style={{color: colour}}>${count}</h1>
 	<h2 style={{color: colour}}>{previous}</h2>
