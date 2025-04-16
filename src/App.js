@@ -97,7 +97,6 @@ function App() {
 	</div>
 	<div>
 	  <h2> GPT Line Graph</h2>
-	  <LineChart />
 	  <h4> Why</h4>
 	  <MyChartComponent />
    	</div>
