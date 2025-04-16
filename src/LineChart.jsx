@@ -14,7 +14,7 @@ const LineChart = ({ count }) =>{
     datasets: [
 	{
 	  label: 'My Data',
-	  data: [{previousCount},{previousCount2},{previousCount3},previousCount5,count],
+	  data: [{previousCount},{previousCount2},{previousCount3},previousCount4,count],
 	  fill: false,
 	  borderColor: 'rgb(75,192,192)',
 	  tension: 0.4,
