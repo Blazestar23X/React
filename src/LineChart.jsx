@@ -5,12 +5,16 @@ import {Chart as ChartJS, LineElement, CategoryScale,LinearScale,PointElement,To
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Tooltip,Legend);
 
 const LineChart = ({ count }) =>{
+  const previousCount = previousCount2;
+  const previousCount2 = previousCount3;
+  const previousCount3 = previousCount4;
+  const previousCount4 = count;
   const data = {
     labels: ['Jan', 'Febno', 'Mar', 'Apr', 'May'],
     datasets: [
 	{
 	  label: 'My Data',
-	  data: [count,19,33,count,2],
+	  data: [{previousCount},{previousCount2},{previousCount3},previousCount5,count],
 	  fill: false,
 	  borderColor: 'rgb(75,192,192)',
 	  tension: 0.4,
