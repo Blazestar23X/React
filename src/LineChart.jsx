@@ -11,7 +11,9 @@ const previousCount4 = 0;
 */
 const LineChart = ({ count }) =>{
   const [prevCount, setPrev] = useState(0);
-  setPrev(count);
+  useEffect(()=>{
+    setPrev(count);
+  }, [count]);
   /*previousCount = previousCount2;
   previousCount2 = previousCount3;
   previousCount3 = previousCount4;
