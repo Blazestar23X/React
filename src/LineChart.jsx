@@ -11,7 +11,7 @@ const LineChart = () =>{
     datasets: [
 	{
 	  label: 'My Data',
-	  data: [OtherComponent count={count},19,33,OtherComponent count={count},2],
+	  data: [<OtherComponent count={count} />,19,33,<OtherComponent count={count} />,2],
 	  fill: false,
 	  borderColor: 'rgb(75,192,192)',
 	  tension: 0.4,
