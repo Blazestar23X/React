@@ -14,7 +14,7 @@ function App() {
   const [timer, setTimer] = useState(30);
   const totalTime = 30;
   const handleClickA = ()=>{
-	setColour('green');
+	setColour('white');
 	setCount(count+1);
 	setPrevious("You just earned $1");
 	};
