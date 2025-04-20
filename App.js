@@ -46,13 +46,13 @@ function App() {
 	}
   },[timer]);
   useEffect(()=> {
-    fetch("https://fast-api-blaze.azurewebsites.net/data"
+    fetch("https://fast-api-blaze.azurewebsites.net/data")
       .then((res) => res.json())
       .then((json)=>{
         setData(json);
         setLoading(false);
       })
-      .catch((err)={
+      .catch((err)=>{
         console.error("Failed to fetch: ",err);
         setLoading(false);
       });
