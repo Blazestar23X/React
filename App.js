@@ -58,6 +58,8 @@ function App() {
       });
     },[]);
   const strokeDashoffset = (timer/totalTime)*440;
+  console.log("Loading:",loading);
+  console.log("Data:",data);
   return (
     <div className="App">
       <header className="App-header">
